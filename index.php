@@ -14,8 +14,8 @@
 
   <div class="position">
     <h3>Your position</h3>
-    <h4>Latitude: <?= 'gros' ?></h4>
-    <h4>Longitude: <?= 'pd' ?></h4>
+    <h4>Latitude: <?= $lat ?></h4>
+    <h4>Longitude: <?= $lng ?></h4>
   </div>
   
 </body>
