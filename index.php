@@ -1,7 +1,6 @@
 <?php 
   include 'includes/google-geolocation-api.php';
   include 'includes/weather-api.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -28,6 +27,23 @@
     <h4>Latitude: <?= $lat ?></h4>
     <h4>Longitude: <?= $lng ?></h4>
   </div>
+
+  <?php foreach ($forecast->list as $_forecast): ?>
+    <div class="day" style="margin-bottom: 20px;">
+      <div>Date: <?= date('H:i d/m/Y', $_forecast->dt); ?></div>
+      <div>Temperature: <?= $_forecast->main->temp; ?>°</div>
+      <div>Humidity: <?= $_forecast->main->humidity; ?>%</div>
+      <div>Rain during next 3 hours: 
+      <?php
+       if(property_exists($_forecast->rain, $rain)){
+        echo $_forecast->rain->$rain;
+       }else {
+         echo '0.00';
+       }
+       ?>
+        mm</div>
+    </div>
+  <?php endforeach; ?>
   
 </body>
 </html>
