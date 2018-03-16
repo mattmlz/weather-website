@@ -62,6 +62,7 @@ Temporary Items
 ###########
 /dist
 /node_modules
+/assets/cache
 gulpfile.js
 package-lock.json
 package.json
