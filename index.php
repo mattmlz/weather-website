@@ -1,13 +1,7 @@
 <?php 
   include 'includes/google-geolocation-api.php';
+  include 'includes/weather-api.php';
 
-  $url = 'http://api.openweathermap.org/data/2.5/forecast?lat='.$lat.'&lon='.$lng.'&units=metric&appid=f534d5a49e05d138b0ced4f7deaa9435';
-
-  $forecast = json_decode(file_get_contents($url), true);
-
-  echo '<pre>';
-  print_r($forecast);
-  echo '</pre>';
 ?>
 
 <!DOCTYPE html>
