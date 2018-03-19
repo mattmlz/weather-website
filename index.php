@@ -26,6 +26,7 @@
     <h3>Your position</h3>
     <h4>Latitude: <?= $lat ?></h4>
     <h4>Longitude: <?= $lng ?></h4>
+    <h4>Your city: <?= $town ?></h4>
   </div>
 
   <?php foreach ($forecast->list as $_forecast): ?>
