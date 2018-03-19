@@ -1,6 +1,9 @@
 <?php 
   include 'includes/google-geolocation-api.php';
+<<<<<<< HEAD
   include 'includes/weather-api.php';
+=======
+>>>>>>> parent of 943daaf... make request to weather API and return it as :hankey:
 ?>
 
 <!DOCTYPE html>
