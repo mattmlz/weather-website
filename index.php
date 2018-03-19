@@ -35,7 +35,11 @@
       <div>Humidity: <?= $_forecast->main->humidity; ?>%</div>
       <div>Rain during next 3 hours: 
       <?php
-       if(property_exists($_forecast->rain, $rain)){
+      //Test if the property is set to delete warning
+       if (!isset($_forecast->rain, $rain)){
+        echo '0.00';
+      //Test if the property exist to delete warning
+       }else if(property_exists($_forecast->rain, $rain)){
         echo $_forecast->rain->$rain;
        }else {
          echo '0.00';
