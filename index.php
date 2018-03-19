@@ -31,7 +31,7 @@
 
   <?php foreach ($forecast->list as $_forecast): ?>
     <div class="day" style="margin-bottom: 20px;">
-      <div>Date: <?= date('H:i d/m/Y', $_forecast->dt); ?></div>
+      <div>Date: <?= date('d/m/Y H:i', $_forecast->dt); ?></div>
       <div>Temperature: <?= $_forecast->main->temp; ?>°</div>
       <div>Humidity: <?= $_forecast->main->humidity; ?>%</div>
       <div>Rain during next 3 hours: 
