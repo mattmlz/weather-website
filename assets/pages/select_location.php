@@ -39,26 +39,28 @@
   </div>
 </header>
 
-  <div class="position">
-    <h3>Your position</h3>
-    <h4>Latitude: <?= $lat ?></h4>
-    <h4>Longitude: <?= $lng ?></h4>
-    <h4>Your city: <?= $town ?></h4>
+  <form action="#" method="get" class="submit_location">
+    <input type="text" value="<?= $location; ?>" name="city">
+    <input type="submit">
+  </form>
+
+  <div class="weather">
+    <p class="location"><?= $location ?></p>
   </div>
 
-  <?php foreach ($forecast->list as $_forecast): ?>
+    <?php foreach ($forecast2->list as $_forecast2): ?>
     <div class="day" style="margin-bottom: 20px;">
-      <div>Date: <?= date('d/m/Y H:i', $_forecast->dt); ?></div>
-      <div>Temperature: <?= $_forecast->main->temp; ?>°</div>
-      <div>Humidity: <?= $_forecast->main->humidity; ?>%</div>
+      <div>Date: <?= date('d/m/Y H:i', $_forecast2->dt); ?></div>
+      <div>Temperature: <?= $_forecast2->main->temp; ?>°</div>
+      <div>Humidity: <?= $_forecast2->main->humidity; ?>%</div>
       <div>Rain during next 3 hours: 
       <?php
       //Test if the property is set to delete warning
-       if (!isset($_forecast->rain, $rain)){
+       if (!isset($_forecast2->rain, $rain)){
         echo '0.00';
       //Test if the property exist to delete warning
-       }else if(property_exists($_forecast->rain, $rain)){
-        echo $_forecast->rain->$rain;
+       }else if(property_exists($_forecast2->rain, $rain)){
+        echo $_forecast2->rain->$rain;
        }else {
          echo '0.00';
        }
