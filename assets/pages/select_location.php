@@ -40,7 +40,7 @@
 </header>
 
   <form action="#" method="get" class="submit_location">
-    <input type="text" value="<?= $location; ?>" name="city">
+    <input type="text" value="<?= $location; ?>" name="city" class="input_location">
     <input type="submit">
   </form>
 

@@ -42,3 +42,10 @@ body {
 .header_menu .right div a:visited { color: #1e90ff; }
 .header_menu .right div a:hover{ color: #3742fa; }
 .header_menu .right div a:active{ color: #3742fa; }
+
+/* SELECT LOCATION PAGE */
+
+input[type="text"].input_location {
+  font-size: 15px;
+  text-align: center;
+}
