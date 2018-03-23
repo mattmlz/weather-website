@@ -33,7 +33,6 @@
     <div class="right">
       <div class="home"><a href="../../index.php">Home</a></div>
       <div class="bad_location"><a href="../pages/select_location.php">Not the good location ?</a></div>
-      <div class="contact"><a href="../pages/contact.php">Contact</a></div>
       <img src="../img/logo_little.png" alt="logo" class="header_logo">
     </div>
   </div>
