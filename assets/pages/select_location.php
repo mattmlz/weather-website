@@ -48,10 +48,30 @@
   </div>
 
     <?php foreach ($forecast2->list as $_forecast2): ?>
+    <?php $weather = json_decode(json_encode($_forecast2->weather), true); foreach ($weather as $key => $_weather) {$prevision = $_weather['id'];}?>
     <div class="day" style="margin-bottom: 20px;">
       <div>Date: <?= date('d/m/Y H:i', $_forecast2->dt); ?></div>
       <div>Temperature: <?= $_forecast2->main->temp; ?>°</div>
       <div>Humidity: <?= $_forecast2->main->humidity; ?>%</div>
+      <div>Prevision: 
+        <?php
+          if($prevision>= 200 && $prevision<300){
+            echo '<img src="../img/weather_icons/thunderstorm.png" alt="Thunderstorm">';
+          }else if(($prevision>= 300 && $prevision<400) || ($prevision>= 500 && $prevision<600)){
+            echo '<img src="../img/weather_icons/rain.png" alt="Rain">';
+          }else if ($prevision>= 600 && $prevision<700){
+            echo '<img src="../img/weather_icons/snow.png" alt="Snow">';
+          }else if($prevision>= 700 && $prevision<800){
+            echo '<img src="../img/weather_icons/fog.png" alt="Fog">';
+          }else if($prevision = 800){
+            echo '<img src="../img/weather_icons/sun.png" alt="Sun">';
+          }else if($prevision>= 801 && $prevision<900){
+            echo '<img src="../img/weather_icons/partial_sun.png" alt="Partial sun">';
+          }else if($prevision>= 900 && $prevision<910){
+            echo '<img src="../img/weather_icons/extreme.png" alt="Extreme">';
+          }
+        ?>
+      </div>
       <div>Rain during next 3 hours: 
       <?php
       //Test if the property is set to delete warning
