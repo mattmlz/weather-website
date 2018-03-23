@@ -48,7 +48,7 @@
   </div>
 
     <?php foreach ($forecast2->list as $_forecast2): ?>
-    <?php $weather = json_decode(json_encode($_forecast2->weather), true); foreach ($weather as $key => $_weather) {$prevision = $_weather['id'];}?>
+    <?php $weather = json_decode(json_encode($_forecast2->weather), true); foreach ($weather as $_weather) {$prevision = $_weather['id'];}?>
     <div class="day" style="margin-bottom: 20px;">
       <div>Date: <?= date('d/m/Y H:i', $_forecast2->dt); ?></div>
       <div>Temperature: <?= $_forecast2->main->temp; ?>°</div>
