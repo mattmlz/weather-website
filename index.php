@@ -73,7 +73,7 @@
           }
         ?>
       </div>
-      <div class="rain">Rain during next 3 hours: 
+      <div class="rain">Rain before the next forecast: 
         <?php
             //Test if the property is set to delete warning
           if (!isset($_forecast->rain, $rain)){
