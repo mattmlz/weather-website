@@ -11,7 +11,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- CSS -->
   <link rel="stylesheet" href="../css/reset.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css">
   <!-- FAVICON -->
   <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
