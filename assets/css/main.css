@@ -50,11 +50,11 @@ body {
 .meteo_widget {
   width: 100vw;
   height: auto;
-  background: red;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .meteo_widget .informations {
@@ -73,13 +73,25 @@ body {
 .meteo_widget .informations p {
   font-size: 30px;
   font-weight: 500;
+  color: #1e90ff;
 }
 
 .meteo_widget .container {
   width: 250px;
+  height: 350px;
   display: flex;
   flex-direction: row;
   position: relative;
+}
+
+.meteo_widget .container .day_name,
+.meteo_widget .container .date,
+.meteo_widget .container .temperature,
+.meteo_widget .container .humidity,
+.meteo_widget .container .prevision,
+.meteo_widget .container .rain{
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .meteo_widget .container .section1 {width: 250px; position: absolute; margin: 10px;}

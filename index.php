@@ -51,10 +51,10 @@
     <?php $weather = json_decode(json_encode($_forecast->weather), true); foreach ($weather as $_weather) {$prevision = $_weather['id'];}?>
     <div class="<?= date('l', $_forecast->dt); ?> section<?= $number++?>">
       <div class="day_name"><?= date('l', $_forecast->dt); ?></div>
-      <div>Date: <?= date('d/m H:i', $_forecast->dt); ?></div>
-      <div>Temperature: <?= $_forecast->main->temp; ?>°</div>
-      <div>Humidity: <?= $_forecast->main->humidity; ?>%</div>
-      <div>
+      <div class="date">From now to: <?= date('d-m H:i', $_forecast->dt); ?></div>
+      <div class="temperature">Temperature: <?= $_forecast->main->temp; ?>°</div>
+      <div class="humidity">Humidity: <?= $_forecast->main->humidity; ?>%</div>
+      <div class="prevision">
         <?php
           if($prevision>= 200 && $prevision<300){
             echo '<img src="assets/img/weather_icons/thunderstorm.png" alt="Thunderstorm">';
@@ -73,7 +73,7 @@
           }
         ?>
       </div>
-      <div>Rain during next 3 hours: 
+      <div class="rain">Rain during next 3 hours: 
         <?php
             //Test if the property is set to delete warning
           if (!isset($_forecast->rain, $rain)){
