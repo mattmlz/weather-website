@@ -3,7 +3,9 @@ body {
   overflow-x: hidden;
 }
 
-/* HEADER MENU */
+/************
+*HEADER MENU* 
+************/
 .header_menu {
   width: 100vw;
   height: auto;
@@ -45,7 +47,9 @@ body {
 .header_menu .right div a:active{ color: #3742fa; }
 
 
-/* METEO WIDGET */
+/*************** 
+* METEO WIDGET * 
+***************/
 
 .meteo_widget {
   width: 100vw;
@@ -140,7 +144,9 @@ body {
 .meteo_widget .container .section40 {width: 280px; position: absolute; display: none; padding: 10px;}
 
 
-/* SELECT LOCATION PAGE */
+/*********************** 
+* SELECT LOCATION PAGE *
+***********************/
 
 input[type="text"].input_location {
   font-size: 15px;
