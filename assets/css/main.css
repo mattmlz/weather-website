@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 /* HEADER MENU */
@@ -22,7 +23,7 @@ body {
 .header_menu .right .header_logo {
   width: 40px;
   height: auto;
-  margin-right: 2vw;
+  margin-right: 3vw;
 }
 
 .header_menu .right {
@@ -42,6 +43,86 @@ body {
 .header_menu .right div a:visited { color: #1e90ff; }
 .header_menu .right div a:hover{ color: #3742fa; }
 .header_menu .right div a:active{ color: #3742fa; }
+
+
+/* METEO WIDGET */
+
+.meteo_widget {
+  width: 100vw;
+  height: auto;
+  background: red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.meteo_widget .informations {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.meteo_widget .informations img{
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.meteo_widget .informations p {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.meteo_widget .container {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.meteo_widget .container .section1 {width: 250px; position: absolute; margin: 10px;}
+.meteo_widget .container .section2 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section3 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section4 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section5 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section6 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section7 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section8 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section9 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section10 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section11 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section12 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section13 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section14 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section15 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section16 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section17 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section18 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section19 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section20 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section21 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section22 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section23 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section24 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section25 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section26 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section27 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section28 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section29 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section30 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section31 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section32 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section33 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section34 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section35 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section36 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section37 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section38 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section39 {width: 250px; position: absolute; display: none; padding: 10px;}
+.meteo_widget .container .section40 {width: 250px; position: absolute; display: none; padding: 10px;}
+
 
 /* SELECT LOCATION PAGE */
 
