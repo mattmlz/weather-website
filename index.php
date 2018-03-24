@@ -11,7 +11,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/reset.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
   <!-- FAVICON -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
@@ -38,53 +38,57 @@
   </div>
 </header>
 
-  <div class="position">
-    <h3>Your position</h3>
-    <h4>Latitude: <?= $lat ?></h4>
-    <h4>Longitude: <?= $lng ?></h4>
-    <h4>Your city: <?= $town ?></h4>
-  </div>
-
+<!-- METEO WIDGET -->
+<div class="meteo_widget">
   <?php foreach ($forecast->list as $_forecast): ?>
   <?php $weather = json_decode(json_encode($_forecast->weather), true); foreach ($weather as $_weather) {$prevision = $_weather['id'];}?>
-    <div class="day" style="margin-bottom: 20px;">
-      <div>Date: <?= date('d/m/Y H:i', $_forecast->dt); ?></div>
-      <div>Temperature: <?= $_forecast->main->temp; ?>°</div>
-      <div>Humidity: <?= $_forecast->main->humidity; ?>%</div>
-      <div>Prevision: 
-        <?php
-          if($prevision>= 200 && $prevision<300){
-            echo '<img src="assets/img/weather_icons/thunderstorm.png" alt="Thunderstorm">';
-          }else if(($prevision>= 300 && $prevision<400) || ($prevision>= 500 && $prevision<600)){
-            echo '<img src="assets/img/weather_icons/rain.png" alt="Rain">';
-          }else if ($prevision>= 600 && $prevision<700){
-            echo '<img src="assets/img/weather_icons/snow.png" alt="Snow">';
-          }else if($prevision>= 700 && $prevision<800){
-            echo '<img src="assets/img/weather_icons/fog.png" alt="Fog">';
-          }else if($prevision = 800){
-            echo '<img src="assets/img/weather_icons/sun.png" alt="Sun">';
-          }else if($prevision>= 801 && $prevision<900){
-            echo '<img src="assets/img/weather_icons/partial_sun.png" alt="Partial sun">';
-          }else if($prevision>= 900 && $prevision<910){
-            echo '<img src="assets/img/weather_icons/extreme.png" alt="Extreme">';
-          }
-        ?>
-      </div>
-      <div>Rain during next 3 hours: 
-      <?php
-      //Test if the property is set to delete warning
-       if (!isset($_forecast->rain, $rain)){
+  <div class="<?= date('l', $_forecast->dt); ?>" style="margin-bottom: 20px;">
+  <div class="day"><?= date('l', $_forecast->dt); ?></div>
+  <div>Date: <?= date('d/m H:i', $_forecast->dt); ?></div>
+  <div>Temperature: <?= $_forecast->main->temp; ?>°</div>
+  <div>Humidity: <?= $_forecast->main->humidity; ?>%</div>
+  <div>Prevision: 
+    <?php
+      if($prevision>= 200 && $prevision<300){
+        echo '<img src="assets/img/weather_icons/thunderstorm.png" alt="Thunderstorm">';
+      }else if(($prevision>= 300 && $prevision<400) || ($prevision>= 500 && $prevision<600)){
+        echo '<img src="assets/img/weather_icons/rain.png" alt="Rain">';
+      }else if ($prevision>= 600 && $prevision<700){
+        echo '<img src="assets/img/weather_icons/snow.png" alt="Snow">';
+      }else if($prevision>= 700 && $prevision<800){
+        echo '<img src="assets/img/weather_icons/fog.png" alt="Fog">';
+      }else if($prevision = 800){
+        echo '<img src="assets/img/weather_icons/sun.png" alt="Sun">';
+      }else if($prevision>= 801 && $prevision<900){
+        echo '<img src="assets/img/weather_icons/partial_sun.png" alt="Partial sun">';
+      }else if($prevision>= 900 && $prevision<910){
+        echo '<img src="assets/img/weather_icons/extreme.png" alt="Extreme">';
+      }
+    ?>
+  </div>
+  <div>Rain during next 3 hours: 
+    <?php
+        //Test if the property is set to delete warning
+      if (!isset($_forecast->rain, $rain)){
         echo '0.00';
-      //Test if the property exist to delete warning
-       }else if(property_exists($_forecast->rain, $rain)){
+        //Test if the property exist to delete warning
+      }else if(property_exists($_forecast->rain, $rain)){
         echo $_forecast->rain->$rain;
-       }else {
-         echo '0.00';
-       }
-       ?>
-        mm</div>
-    </div>
+      }else {
+        echo '0.00';
+      }
+    ?>
+    mm
+  </div>
+  </div>
   <?php endforeach; ?>
+</div>
+
+  <div class="position">
+    <img src="assets/img/location.png" alt="geolocation icon">
+    <p><?= $town ?></p>
+  </div>
   
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
