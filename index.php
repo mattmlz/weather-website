@@ -42,10 +42,20 @@
 <div class="meteo_widget_geolocation">
 
   <div class="informations">
-    <img src="assets/img/location.png" alt="geolocation icon">
-    <p><?= $town ?></p>
-    
+    <div class="location">
+      <img src="assets/img/location.png" alt="geolocation icon">
+      <p class="city"><?= $town ?></p>
+    </div>
+    <div class="days">
+      <p class="day1"></p>
+      <p class="day2"></p>
+      <p class="day3"></p>
+      <p class="day4"></p>
+      <p class="day5"></p>
+      <p class="day6"></p>
+    </div>
   </div>
+
   <div class="container">
     <?php foreach ($forecast->list as $_forecast): ?>
     <?php $weather = json_decode(json_encode($_forecast->weather), true); foreach ($weather as $_weather) {$prevision = $_weather['id'];}?>

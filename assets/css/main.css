@@ -50,7 +50,7 @@ body {
 /*************** 
 * METEO WIDGET * 
 ***************/
-.meteo_widget_geolocation_geolocation {
+.meteo_widget_geolocation {
   width: 100vw;
   height: auto;
   display: flex;
@@ -63,9 +63,14 @@ body {
 .meteo_widget_geolocation .informations {
   width: 280px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.meteo_widget_geolocation .informations .location {
+  display: flex;
+  align-items: center;
 }
 
 .meteo_widget_geolocation .informations img{
@@ -74,10 +79,26 @@ body {
   margin: 10px;
 }
 
-.meteo_widget_geolocation .informations p {
+.meteo_widget_geolocation .informations p.city {
   font-size: 30px;
   font-weight: 500;
   color: #1e90ff;
+}
+
+.meteo_widget_geolocation .informations .days p {
+  color: #F1F1F1;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  border: 3px solid #1e90ff;
+  border-radius: 20px;
+  background: #1e90ff;
+  cursor: pointer;
+}
+
+.meteo_widget_geolocation .informations .days p:hover {
+  color: #3742fa;
+  background: #F1F1F1;
 }
 
 .meteo_widget_geolocation .container {
@@ -100,9 +121,10 @@ body {
 
 .meteo_widget_geolocation .container .day_name{
   font-weight: 700;
+  font-size: 25px;
 }
 
-.meteo_widget_geolocation .container .section1 {width: 280px; position: absolute; margin: 10px;}
+.meteo_widget_geolocation .container .section1 {width: 280px; position: absolute; padding: 10px;}
 .meteo_widget_geolocation .container .section2 {width: 280px; position: absolute; display: none; padding: 10px;}
 .meteo_widget_geolocation .container .section3 {width: 280px; position: absolute; display: none; padding: 10px;}
 .meteo_widget_geolocation .container .section4 {width: 280px; position: absolute; display: none; padding: 10px;}
