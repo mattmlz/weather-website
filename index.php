@@ -47,12 +47,13 @@
       <p class="city"><?= $town ?></p>
     </div>
     <div class="days">
-      <p class="day1"></p>
-      <p class="day2"></p>
-      <p class="day3"></p>
-      <p class="day4"></p>
-      <p class="day5"></p>
-      <p class="day6"></p>
+      <p class="day1">Monday</p>
+      <p class="day2">Tuesday</p>
+      <p class="day3">Wednesday</p>
+      <p class="day4">Thursday</p>
+      <p class="day5">Friday</p>
+      <p class="day6">Saturday</p>
+      <p class="day7">Sunday</p>
     </div>
   </div>
 
