@@ -105,9 +105,12 @@ body {
 .meteo_widget_geolocation .container {
   width: 300px;
   height: 380px;
+  padding: 20px 0;
   display: flex;
   flex-direction: row;
   position: relative;
+  border: solid 2px #2FD9DA;
+  border-radius: 10px;
 }
 
 .meteo_widget_geolocation .container .day_name,
@@ -127,6 +130,12 @@ body {
 
 .meteo_widget_geolocation .container .prevision {
   padding: 10px;
+}
+
+.meteo_widget_geolocation .arrow_left img,
+.meteo_widget_geolocation .arrow_right img {
+  width: 20px;
+  margin: 15px;
 }
 
 .meteo_widget_geolocation .container .section1 {width: 280px; position: absolute; padding: 10px;}
