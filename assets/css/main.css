@@ -90,6 +90,7 @@ body {
   font-size: 30px;
   font-weight: 500;
   color: #1e90ff;
+  margin-bottom: 10px;
 }
 
 .meteo_widget_geolocation .informations .days p,

@@ -43,7 +43,7 @@
   <div class="informations">
     <div class="location">
       <img src="assets/img/location.png" alt="geolocation icon">
-      <p class="city"><?= $town ?></p>
+      <p class="city">Location: <?= $town ?></p>
     </div>
     <div class="days">
       <p class="day1">Monday</p>
@@ -109,7 +109,7 @@
   <div class="informations">
     <div class="location">
       <img src="assets/img/location.png" alt="geolocation icon">
-      <p class="city"><?= $location ?></p>
+      <p class="city">Destination: <?= $location ?></p>
     </div>
     <form action="#" method="get" class="submit_location">
         <input type="text" value="<?= $location; ?>" name="city" class="input_location">
