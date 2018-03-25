@@ -124,6 +124,10 @@ body {
   font-size: 25px;
 }
 
+.meteo_widget_geolocation .container .prevision {
+  padding: 10px;
+}
+
 .meteo_widget_geolocation .container .section1 {width: 280px; position: absolute; padding: 10px;}
 .meteo_widget_geolocation .container .section2 {width: 280px; position: absolute; display: none; padding: 10px;}
 .meteo_widget_geolocation .container .section3 {width: 280px; position: absolute; display: none; padding: 10px;}
