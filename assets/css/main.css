@@ -50,8 +50,7 @@ body {
 /*************** 
 * METEO WIDGET * 
 ***************/
-
-.meteo_widget {
+.meteo_widget_geolocation_geolocation {
   width: 100vw;
   height: auto;
   display: flex;
@@ -61,26 +60,27 @@ body {
   align-items: center;
 }
 
-.meteo_widget .informations {
-  width: 200px;
+.meteo_widget_geolocation .informations {
+  width: 280px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
-.meteo_widget .informations img{
+.meteo_widget_geolocation .informations img{
   width: 30px;
   height: 30px;
   margin: 10px;
 }
 
-.meteo_widget .informations p {
+.meteo_widget_geolocation .informations p {
   font-size: 30px;
   font-weight: 500;
   color: #1e90ff;
 }
 
-.meteo_widget .container {
+.meteo_widget_geolocation .container {
   width: 280px;
   height: 350px;
   display: flex;
@@ -88,60 +88,60 @@ body {
   position: relative;
 }
 
-.meteo_widget .container .day_name,
-.meteo_widget .container .date,
-.meteo_widget .container .temperature,
-.meteo_widget .container .humidity,
-.meteo_widget .container .prevision,
-.meteo_widget .container .rain{
+.meteo_widget_geolocation .container .day_name,
+.meteo_widget_geolocation .container .date,
+.meteo_widget_geolocation .container .temperature,
+.meteo_widget_geolocation .container .humidity,
+.meteo_widget_geolocation .container .prevision,
+.meteo_widget_geolocation .container .rain{
   margin-bottom: 10px;
   text-align: center;
 }
 
-.meteo_widget .container .day_name{
+.meteo_widget_geolocation .container .day_name{
   font-weight: 700;
 }
 
-.meteo_widget .container .section1 {width: 280px; position: absolute; margin: 10px;}
-.meteo_widget .container .section2 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section3 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section4 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section5 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section6 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section7 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section8 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section9 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section10 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section11 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section12 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section13 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section14 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section15 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section16 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section17 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section18 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section19 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section20 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section21 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section22 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section23 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section24 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section25 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section26 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section27 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section28 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section29 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section30 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section31 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section32 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section33 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section34 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section35 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section36 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section37 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section38 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section39 {width: 280px; position: absolute; display: none; padding: 10px;}
-.meteo_widget .container .section40 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section1 {width: 280px; position: absolute; margin: 10px;}
+.meteo_widget_geolocation .container .section2 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section3 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section4 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section5 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section6 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section7 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section8 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section9 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section10 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section11 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section12 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section13 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section14 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section15 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section16 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section17 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section18 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section19 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section20 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section21 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section22 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section23 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section24 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section25 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section26 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section27 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section28 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section29 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section30 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section31 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section32 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section33 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section34 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section35 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section36 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section37 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section38 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section39 {width: 280px; position: absolute; display: none; padding: 10px;}
+.meteo_widget_geolocation .container .section40 {width: 280px; position: absolute; display: none; padding: 10px;}
 
 
 /*********************** 

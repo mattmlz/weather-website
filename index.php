@@ -39,7 +39,7 @@
 </header>
 
 <!-- METEO WIDGET -->
-<div class="meteo_widget">
+<div class="meteo_widget_geolocation">
 
   <div class="informations">
     <img src="assets/img/location.png" alt="geolocation icon">
