@@ -14,13 +14,13 @@ const $sunday = widget_meteo.querySelectorAll('.Sunday')
 const $actual_day = widget_meteo.querySelector('.day_name')
 const $actual_day_text = $actual_day.innerText || $actual_day.textContent
 //Get buttons with days
-const $day1 = document.querySelector('.day1')
-const $day2 = document.querySelector('.day2')
-const $day3 = document.querySelector('.day3')
-const $day4 = document.querySelector('.day4')
-const $day5 = document.querySelector('.day5')
-const $day6 = document.querySelector('.day6')
-const $day7 = document.querySelector('.day7')
+const $day1 = document.querySelector('.meteo_widget_geolocation .informations .days .day1')
+const $day2 = document.querySelector('.meteo_widget_geolocation .informations .days .day2')
+const $day3 = document.querySelector('.meteo_widget_geolocation .informations .days .day3')
+const $day4 = document.querySelector('.meteo_widget_geolocation .informations .days .day4')
+const $day5 = document.querySelector('.meteo_widget_geolocation .informations .days .day5')
+const $day6 = document.querySelector('.meteo_widget_geolocation .informations .days .day6')
+const $day7 = document.querySelector('.meteo_widget_geolocation .informations .days .day7')
 //set the string of values of each button
 const $day1_text = $day1.innerText || $day1.textContent
 const $day2_text = $day2.innerText || $day2.textContent
