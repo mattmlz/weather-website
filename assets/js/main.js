@@ -46,20 +46,22 @@ const $arrow_left_destination = widget_destination.querySelector('.arrow_left im
 const $arrow_right_destination = widget_destination.querySelector('.arrow_right img')
 //Change the weahter
 let index_arrows_monday = 0
-let index_arrows_destination = 0
+let index_arrows_monday_destination = 0
+index_arrows_monday = Math.min(Math.max(parseInt(index_arrows_monday), 0), 8) //to limite the index
 index_arrows_monday_destination = Math.min(Math.max(parseInt(index_arrows_monday_destination), 0), 8) //to limite the index
+let index_arrows2_monday = 1
 let index_arrows2_monday_destination = 1
-index_arrows2_monday_destination = Math.min(Math.max(parseInt(index_arrows2_monday), 1), 9)
+index_arrows2_monday = Math.min(Math.max(parseInt(index_arrows2_monday), 1), 9)
+index_arrows2_monday_destination = Math.min(Math.max(parseInt(index_arrows2_monday_destination), 1), 9)
 
 let index_arrows_tuesday = 0
 let index_arrows_tuesday_destination = 0
-index_arrows_tuesday = Math.min(Math.max(parseInt(index_arrows_tuesday), 0), 8) //to limite the index
 index_arrows_tuesday = Math.min(Math.max(parseInt(index_arrows_tuesday), 0), 8) //to limite the index
 index_arrows_tuesday_destination = Math.min(Math.max(parseInt(index_arrows_tuesday_destination), 0), 8) //to limite the index
 let index_arrows2_tuesday = 1
 let index_arrows2_tuesday_destination = 1
 index_arrows2_tuesday = Math.min(Math.max(parseInt(index_arrows2_tuesday), 1), 9)
-index_arrows2_tuesday_destination = Math.min(Math.max(parseInt(index_arrows2_tuesday), 1), 9)
+index_arrows2_tuesday_destination = Math.min(Math.max(parseInt(index_arrows2_tuesday_destination), 1), 9)
 
 let index_arrows_wednesday = 0
 let index_arrows_wednesday_destination = 0
@@ -718,7 +720,7 @@ $arrow_right_location.addEventListener('click', (event) => {
   }
 })
 
-$arrow_right_destinatioon.addEventListener('click', (event) => {
+$arrow_right_destination.addEventListener('click', (event) => {
   event.preventDefault()
   if($monday_destination[0].style.display == 'block' || $monday_destination[1].style.display == 'block' || $monday_destination[2].style.display == 'block' || $monday_destination[3].style.display == 'block' || $monday_destination[4].style.display == 'block' || $monday_destination[5].style.display == 'block' || $monday_destination[6].style.display == 'block' || $monday_destination[7].style.display == 'block'){
     $monday_destination[index_arrows_monday_destination].style.display = 'none'
