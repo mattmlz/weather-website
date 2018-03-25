@@ -64,6 +64,20 @@
       <div class="date">From now to: <?= date('d-m H:i', $_forecast->dt); ?></div>
       <div class="temperature">Temperature: <?= $_forecast->main->temp; ?>°</div>
       <div class="humidity">Humidity: <?= $_forecast->main->humidity; ?>%</div>
+      <div class="rain">Rain before the next forecast: 
+        <?php
+            //Test if the property is set to delete warning
+          if (!isset($_forecast->rain, $rain)){
+            echo '0.00';
+            //Test if the property exist to delete warning
+          }else if(property_exists($_forecast->rain, $rain)){
+            echo $_forecast->rain->$rain;
+          }else {
+            echo '0.00';
+          }
+        ?>
+        mm
+      </div>
       <div class="prevision">
         <?php
           if($prevision>= 200 && $prevision<300){
@@ -82,20 +96,6 @@
             echo '<img src="assets/img/weather_icons/extreme.png" alt="Extreme">';
           }
         ?>
-      </div>
-      <div class="rain">Rain before the next forecast: 
-        <?php
-            //Test if the property is set to delete warning
-          if (!isset($_forecast->rain, $rain)){
-            echo '0.00';
-            //Test if the property exist to delete warning
-          }else if(property_exists($_forecast->rain, $rain)){
-            echo $_forecast->rain->$rain;
-          }else {
-            echo '0.00';
-          }
-        ?>
-        mm
       </div>
     </div>
     <?php endforeach; ?>
