@@ -40,7 +40,6 @@
 
 <!-- METEO WIDGET -->
 <div class="meteo_widget_geolocation">
-
   <div class="informations">
     <div class="location">
       <img src="assets/img/location.png" alt="geolocation icon">
@@ -57,6 +56,7 @@
     </div>
   </div>
 
+  <div class="arrow_left"><img src="assets/img/arrow_left.png" alt="arrow left"></div>
   <div class="container">
     <?php foreach ($forecast->list as $_forecast): ?>
     <?php $weather = json_decode(json_encode($_forecast->weather), true); foreach ($weather as $_weather) {$prevision = $_weather['id'];}?>
@@ -101,6 +101,7 @@
     </div>
     <?php endforeach; ?>
   </div>
+  <div class="arrow_right"><img src="assets/img/arrow_right.png" alt="arrow left"></div>
 </div>
   
   <script src="assets/js/main.js"></script>
