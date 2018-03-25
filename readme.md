@@ -12,4 +12,4 @@ The story of this project comes from a recurrent problem: take or not his motorb
 - Project responsive
 
 ## Where find this project online:
-You can go to the [lab of my portfolio](lab.matthieutoussaint.fr/weather-companion)
+You can go to the [lab of my portfolio](http://lab.matthieutoussaint.fr/weather-companion/).
